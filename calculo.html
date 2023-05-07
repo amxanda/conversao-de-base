@@ -31,37 +31,55 @@
     </header>
     <main class="main container">
         <h1 class="title text-center">Bases Binárias</h1>
-        <form>
-            <label for="valor">Valor:</label>
-            <input type="number" id="valor" name="valor" required>
+        <label for="decimal">Digite um valor decimal:</label>
+        <input type="text" id="decimal" name="decimal"><br><br>
+        <button
+            onclick="document.getElementById('binario').textContent = decimalParaBinario(document.getElementById('decimal').value)">Converter
+            para binário</button>
+        <p>O valor em binário é: <span id="binario"></span></p><br><br>
 
-            <label for="resul">Resultado:</label>
-            <input type="number" id="resul" name="resul" required>
-    
-            <label for="de">Converter de:</label>
-            <select id="de" name="de">
-                <option value="bin">Binário</option>
-                <option value="dec">Decimal</option>
-                <option value="hex">Hexadecimal</option>
-            </select>
-    
-            <label for="para">Converter para:</label>
-            <select id="para" name="para">
-                <option value="bin">Binário</option>
-                <option value="dec">Decimal</option>
-                <option value="hex">Hexadecimal</option>
-            </select>
-    
-            <button type="button" onclick="converter()">Converter</button>
-        </form>
+        <label for="binario2">Digite um valor binário:</label>
+        <input type="text" id="binario2" name="binario"><br><br>
+        <button
+            onclick="document.getElementById('decimal2').textContent = binarioParaDecimal(document.getElementById('binario2').value)">Converter
+            para decimal</button>
+        <p>O valor em decimal é: <span id="decimal2"></span></p><br><br>
+
+        <label for="decimal3">Digite um valor decimal:</label>
+        <input type="text" id="decimal3" name="decimal3"><br><br>
+        <button
+            onclick="document.getElementById('hexadecimal').textContent = decimalParaHexadecimal(document.getElementById('decimal3').value)">Converter
+            para hexadecimal</button>
+        <p>O valor em hexadecimal é: <span id="hexadecimal"></span></p><br><br>
+
+        <label for="hexadecimal2">Digite um valor hexadecimal:</label>
+        <input type="text" id="hexadecimal2" name="hexadecimal2"><br><br>
+        <button
+            onclick="document.getElementById('decimal4').textContent = hexadecimalParaDecimal(document.getElementById('hexadecimal2').value)">Converter
+            para decimal</button>
+        <p>O valor em decimal é: <span id="decimal4"></span></p><br><br>
+
+        <label for="binario3">Digite um valor binario:</label>
+        <input type="text" id="binario3" name="binario3"><br><br>
+        <button
+            onclick="document.getElementById('hexadecimal3').textContent = binarioParaHexadecimal(document.getElementById('binario3').value)">Converter
+            para hexadecimal</button>
+        <p>O valor em hexadecimal é: <span id="hexadecimal3"></span></p><br><br>
+
+        <label for="hexadecimal4">Digite um valor hexadecimal</label>
+        <input type="text" id="hexadecimal4" name="hexadecimal4"><br><br>
+        <button
+            onclick="document.getElementById('binario4').textContent = hexadecimalParaBinario(document.getElementById('hexadecimal4').value)">Converter
+            para binario</button>
+        <p>O valor em binario é: <span id="binario4"></span></p><br><br>
     </main>
-    <footer class="footer">
+    <footer class="footer ">
         <div class="container">
             <p class="text-center">&copy; Todos os direitos reservados</p>
         </div>
     </footer>
 
-    <script src="assets/js/calculo.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
