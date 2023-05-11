@@ -1,17 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-}
-h1 {
-    text-align: center;
-}
-form {
-    margin: 0 auto;
-    max-width: 600px;
-}
+
+
 label {
     display: block;
     margin-bottom: 10px;
 }
+
 input[type="number"],
 input[type="text"] {
     padding: 5px;
@@ -19,6 +12,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     font-size: 16px;
 }
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -28,13 +22,7 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
+
 button:hover {
     background-color: #3e8e41;
-}
-p {
-    margin-top: 20px;
-    font-size: 18px;
-}
-span {
-    font-weight: bold;
 }
