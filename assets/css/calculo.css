@@ -1,28 +1,36 @@
 
+.div {
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 0 1.25rem 1px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+}
 
 label {
-    display: block;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #198754;
+    font-weight: bold;
 }
 
-input[type="number"],
-input[type="text"] {
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    gap: 10px;
+}
+
+.decimal, .binary, .hexa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 1.25rem 1px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+input {
+    border: 1px solid #c4c4c4;
     padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #3e8e41;
+    border-radius: 10px;
 }

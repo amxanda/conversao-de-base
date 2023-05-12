@@ -1,16 +1,20 @@
-body {
-    min-height: 100vh;
-    background: #fafafa;
+.card-body {
+    padding: ;
+}
+
+.card-img-top {
+    max-height: 310px;
+    object-fit: cover;
 }
 
 .social-link {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
+    color: #c4c4c4;
     border-radius: 50%;
     transition: all 0.3s;
     font-size: 0.9rem;
@@ -20,5 +24,5 @@ body {
 .social-link:focus {
     background: #ddd;
     text-decoration: none;
-    color: #555;
+    color: #c4c4c4;
 }
